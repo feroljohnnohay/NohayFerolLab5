@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void processNext(View v){
-        Intent i = null, chooser = null;
+        Intent i , chooser ;
 
         if (v.getId() == R.id.btnScreen2){
             i = new Intent (this, Activity2.class);

@@ -12,11 +12,12 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-
+        Intent i = new Intent(this, MyService.class);
+        startService(i);
     }
 
     public void process(View v){
-        Intent i = null, chooser = null;
+        Intent i, chooser ;
 
         if (v.getId() == R.id.btnScreen1){
             i = new Intent (this, MainActivity.class);

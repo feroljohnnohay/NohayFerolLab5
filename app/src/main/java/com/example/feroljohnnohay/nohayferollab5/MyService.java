@@ -12,7 +12,7 @@ public class MyService extends IntentService{
      *
      * @param name Used to name the worker thread, important only for debugging.
      */
-    public MyService(String name) {
+    public MyService() {
         super("MyService");
     }
 
